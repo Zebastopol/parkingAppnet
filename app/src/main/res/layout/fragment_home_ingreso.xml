@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log_background"
+    android:id="@+id/fragment_home">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="412dp"
+        android:layout_height="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@color/orange"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:layout_scrollInterpolator="@android:anim/decelerate_interpolator"
+            app:toolbarId="@+id/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+            <!--android:background="@drawable/stylo_borde_cajatxt"
+                   android:drawableLeft="@drawable/ic_buscar"-->
+
+                <!--android:drawableLeft="@drawable/ic_buscarw"/> -->
+
+
+    <EditText
+        android:id="@+id/edt_home_id"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="432dp"
+        android:layout_weight="1"
+        android:drawablePadding="10dp"
+        android:inputType="text"
+        android:gravity="center"
+        android:hint="AA BB 00"
+        android:minHeight="48dp"
+        android:textColor="@color/grey_texts2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/edt_home_id"
+        app:layout_constraintEnd_toStartOf="@+id/appbar" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/background_fields">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txtTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingreso de Vehiculo"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edt_home_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <Button
+        android:id="@+id/btnNewEntrance"
+        android:layout_width="408dp"
+        android:layout_height="55dp"
+        android:text="Ingresar"
+        android:textSize="26dp"
+        android:textColor="@color/grey_texts2"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

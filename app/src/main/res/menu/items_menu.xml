@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--android:icon="@drawable/ic_home"-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navIngreso"
+            android:title="Ingreso">
+
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navBusqueda"
+            android:title="Busqueda">
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navResumen"
+            android:title="Informe">
+
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navCuenta"
+            android:title="Datos Cuenta">
+
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+
+            android:title="Funciones">
+            <menu>
+                <item
+                    android:id="@+id/txtScanner"
+                    android:title="Scanner"
+                    /> <!--android:icon="@drawable/ic_deportes"-->
+                <item
+                    android:id="@+id/txtCamera"
+                    android:title="Camara"
+                    />
+                <item
+                    android:id="@+id/txtPrint"
+                    android:title="Imprimir"
+                    />
+                <item
+                    android:id="@+id/textNfc"
+                    android:title="Nfc Card"
+                   />
+
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navSalir"
+            android:title="Cerrar Sesión">
+
+        </item>
+    </group>
+</menu>

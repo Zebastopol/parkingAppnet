@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="20dp"
+    android:background="@color/background_fields">
+    <!--android:background="@drawable/fondocabecera3"-->
+
+    <ImageView
+        android:layout_width="321dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logoappnet" />
+
+
+    <TextView
+        android:id="@+id/txtHeaderName"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Bienvenido"
+        android:textColor="@color/grey_texts"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

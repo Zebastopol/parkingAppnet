@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.ParkingAppnet.MySplash" parent="Theme.SplashScreen">
+        <item name="android:windowSplashScreenBackground">#FFFFFF</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/logoappnet</item>
+        <item name="postSplashScreenTheme">@style/Theme.ParkingAppnet.MySplash</item>
+
+    </style>
+</resources>
